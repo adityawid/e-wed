@@ -1,0 +1,91 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="viewline">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+    <!--item_tenant-->
+    <style name="item_tenant_left">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:layout_weight">2.1</item>
+    </style>
+    <style name="item_tenant_mid">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:text"> : </item>
+    </style>
+    <style name="item_tenant_right">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:layout_weight">1.1</item>
+    </style>
+
+    <!--item_profile-->
+    <style name="item_profile_linear">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/spacer_10</item>
+        <item name="android:textSize">@dimen/text_title</item>
+    </style>
+    <style name="item_profile_left">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.4</item>
+        <item name="android:textSize">@dimen/text_hig</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <style name="item_profile_right">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.6</item>
+        <item name="android:textSize">@dimen/text_hig</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/colorOrange</item>
+        <item name="android:textAlignment">textEnd</item>
+    </style>
+
+    <!--item_help-->
+    <style name="item_help_relative">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/spacer_10</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="item_help_left">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">@dimen/text_hig</item>
+    </style>
+    <style name="item_help_right">
+        <item name="android:layout_width">@dimen/arrow</item>
+        <item name="android:layout_height">@dimen/arrow</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+</resources>

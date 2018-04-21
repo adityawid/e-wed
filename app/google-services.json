@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "617456670387",
+    "firebase_url": "https://ewed-a20cc.firebaseio.com",
+    "project_id": "ewed-a20cc",
+    "storage_bucket": "ewed-a20cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617456670387:android:dc1db3db5818074c",
+        "android_client_info": {
+          "package_name": "online.e_wedd.apps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "617456670387-bht2h75ksgr04b74b7cuglqu43dbs7kd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "online.e_wedd.apps",
+            "certificate_hash": "2a7fdef822d81cfbdd52004119bf2474245167d2"
+          }
+        },
+        {
+          "client_id": "617456670387-2ue6glb1d7kbh7lm90oik05tdb6s57sd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCCjCuJ2LSTFv_d_Qrv5dZ1TKDvadOfJs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "617456670387-2ue6glb1d7kbh7lm90oik05tdb6s57sd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
