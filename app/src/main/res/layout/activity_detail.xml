@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.DetailActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/kat_wardrobe"
+            android:layout_marginBottom="@dimen/spacer_6"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacer_10"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/detail_produk_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_mid"
+                android:text="Baju Kebaya Cokelat"/>
+            <TextView
+                android:id="@+id/detail_produk_harga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_hig"
+                android:text="Rp 440.000"
+                android:textColor="@color/colorPrimaryDark"/>
+            <TextView
+                android:id="@+id/detail_produk_lokasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_small"
+                android:text="Bali"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/title_bar"
+            android:text="Deskripsi"/>
+
+        <TextView
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_produk_deskripsi"
+            android:text="Detail Kebaya
+–    Bahan chiffon creft
+–    Pilihan panjang lengan : pendek/sesiku
+
+Detail ukuran:
+Lingkar Dada x Lingkar Pinggang x Lingkar Pinggul
+XS : 80-82 cm x 65-67 cm x 86-88 cm
+S : 84-86 cm x 69-71 cm x 90-92 cm
+M : 88-90 cm x 74-76 cm x 95-97 cm
+L : 92-94 cm x 79-81 cm x 100-102 cm
+XL : 96-98 cm x 84-86 cm x 105-107 cm
+"
+            android:padding="@dimen/spacer_10"
+            android:background="@drawable/round_square"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacer_16"
+            android:gravity="center_horizontal">
+            <LinearLayout
+                android:id="@+id/btn_order"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_square"
+                android:padding="@dimen/spacer_10"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="@dimen/activity_vertical_margin">
+
+                <ImageView
+                    android:layout_width="@dimen/image_button"
+                    android:layout_height="@dimen/image_button"
+                    android:src="@drawable/ic_cart"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacer_6"
+                    android:text="ORDER"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_chat"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_square"
+                android:padding="@dimen/spacer_10"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="@dimen/activity_vertical_margin">
+
+                <ImageView
+                    android:layout_width="@dimen/image_button"
+                    android:layout_height="@dimen/image_button"
+                    android:src="@drawable/ic_chat"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacer_6"
+                    android:text="CHAT"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

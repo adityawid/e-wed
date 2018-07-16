@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacer_2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/image_100"
+                android:src="@drawable/kat_wardrobe"
+                android:layout_marginRight="@dimen/spacer_6"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/text_left"
+                        android:text="No. Invoice"/>
+                    <TextView
+                        style="@style/text_mid" />
+                    <TextView
+                        android:id="@+id/cart_invoice"
+                        style="@style/text_right"
+                        android:text="35467"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/text_left"
+                        android:text="Tgl Acara"/>
+                    <TextView
+                        style="@style/text_mid" />
+                    <TextView
+                        android:id="@+id/cart_Tanggal"
+                        style="@style/text_right"
+                        android:text="Baju Kebaya Coklat"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/text_left"
+                        android:text="Nama Vendor"/>
+                    <TextView
+                        style="@style/text_mid" />
+                    <TextView
+                        android:id="@+id/cart_vendor"
+                        style="@style/text_right"
+                        android:text="WPR Boutique"/>
+                </LinearLayout>
+
+<!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/text_left"
+                        android:text="Kategori"/>
+                    <TextView
+                        style="@style/text_mid" />
+                    <TextView
+                        android:id="@+id/cart_kategori"
+                        style="@style/text_right"
+                        android:text="Wardrobe"/>
+                </LinearLayout>
+-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/text_left"
+                        android:text="Pembayaran"/>
+                    <TextView
+                        style="@style/text_mid" />
+                    <TextView
+                        android:id="@+id/cart_pembayaran"
+                        style="@style/text_right"
+                        android:text="PAID"
+                        android:textColor="@color/colorGreen"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

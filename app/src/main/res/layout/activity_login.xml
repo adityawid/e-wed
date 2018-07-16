@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/spacer_32"
+    android:background="@color/colorPrimaryDark"
+    tools:context="online.e_wedd.apps.Activities.LoginActivity">
+    <ImageView
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginVertical="@dimen/activity_vertical_margin"
+        style="@style/image_150" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/login_google"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/round_square_black">
+            <ImageView
+                style="@style/login_img"
+                android:src="@drawable/ic_google"/>
+            <TextView
+                style="@style/login_txt"
+                android:text="Login with Google"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/login_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/round_square_black"
+            android:layout_marginVertical="@dimen/activity_vertical_margin">
+            <ImageView
+                style="@style/login_img"
+                android:src="@drawable/ic_phone"/>
+            <TextView
+                style="@style/login_txt"
+                android:text="Login with phone"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -18,6 +18,29 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">1dp</item>
         <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+    <!--LOGIN-->
+    <style name="login_img">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginHorizontal" tools:ignore="NewApi">@dimen/spacer_10</item>
+    </style>
+
+    <style name="login_txt">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/text_hig</item>
+    </style>
+
+    <style name="image_150">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:src">@drawable/logo</item>
     </style>
 
     <!--item_tenant-->
@@ -87,5 +110,106 @@
         <item name="android:layout_height">@dimen/arrow</item>
         <item name="android:layout_alignParentRight">true</item>
         <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!-- Style for ViewGroup of Logo and Tagline-->
+    <style name="viewgroup_logo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">80dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Style for textView of Logo -->
+    <style name="textview_logo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/app_name</item>
+    </style>
+    <!-- Style for textView of Tagline -->
+    <style name="textview_tagline">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/app_tagline</item>
+        <item name="android:textColor">@color/putih</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="noBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorGraytransparent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <!--MENU KATEGORI-->
+    <style name="menu_kategori_card">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">@dimen/spacer_6</item>
+    </style>
+
+    <style name="menu_kategori_linearlayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="menu_kategori_image">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="menu_kategori_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--item text-->
+    <style name="text_left">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_mid</item>
+        <item name="android:layout_weight">2.1</item>
+    </style>
+    <style name="text_mid">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_mid</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:text"> : </item>
+    </style>
+    <style name="text_right">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_mid</item>
+        <item name="android:layout_weight">1.1</item>
+    </style>
+
+    <!--TAMBAHAN-->
+
+    <style name="image_100">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+    </style>
+
+    <style name="title_bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_hig</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:layout_marginBottom">@dimen/spacer_6</item>
+        <item name="android:paddingLeft">@dimen/spacer_16</item>
     </style>
 </resources>

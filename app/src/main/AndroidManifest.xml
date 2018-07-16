@@ -2,22 +2,39 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="online.e_wedd.apps">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
+        android:name=".Helper.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.MainActivity">
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="7c7fbd8c2c002cee6aedf4f88a7bc0461245da57" />
+
+        <activity android:name=".Activities.MainActivity" />
+        <activity android:name=".Activities.OrderActivity" />
+        <activity
+            android:name=".Activities.SplashActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SampleActivity" />
-        <activity android:name=".Activities.OrderActivity"></activity>
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".Activities.DetailActivity" />
+        <activity android:name=".Activities.PesanActivity" />
+        <activity android:name=".Activities.CekOrderFormActivity"></activity>
     </application>
 
 </manifest>

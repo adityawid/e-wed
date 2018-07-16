@@ -1,0 +1,155 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context="online.e_wedd.apps.FragmentMain.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/HF_slider"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            custom:auto_cycle="true"
+            custom:indicator_visibility="visible"
+            custom:pager_animation="Accordion"
+            custom:pager_animation_span="1100"/>
+
+        <com.daimajia.slider.library.Indicators.PagerIndicator
+            android:id="@+id/dashboard_home_custom_indicator2"
+            style="@style/AndroidImageSlider_Corner_Oval_Orange"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"/>
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:src="@drawable/gambarhead"/>
+        <TextView
+            android:id="@+id/dashboard_home_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/HF_slider"
+            android:layout_margin="10dp"
+            android:text="Category"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <!--<android.support.v7.widget.RecyclerView
+            android:id="@+id/HF_rv_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/dashboard_home_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center">
+        </android.support.v7.widget.RecyclerView>-->
+        <LinearLayout
+            android:layout_below="@id/dashboard_home_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/cat_line1"
+            android:gravity="center">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/kategori_wardrobe"
+                style="@style/menu_kategori_card">
+                <LinearLayout
+                    style="@style/menu_kategori_linearlayout">
+                    <ImageView
+                        style="@style/menu_kategori_image"
+                        android:src="@drawable/kat_wardrobe"/>
+                    <TextView
+                        style="@style/menu_kategori_text"
+                        android:text="wardobe"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/kategori_makeup"
+                style="@style/menu_kategori_card">
+                <LinearLayout
+                    style="@style/menu_kategori_linearlayout">
+                    <ImageView
+                        style="@style/menu_kategori_image"
+                        android:src="@drawable/kat_makeup"/>
+                    <TextView
+                        style="@style/menu_kategori_text"
+                        android:text="makeup"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/kategori_catering"
+                style="@style/menu_kategori_card">
+                <LinearLayout
+                    style="@style/menu_kategori_linearlayout">
+                    <ImageView
+                        style="@style/menu_kategori_image"
+                        android:src="@drawable/kat_catering"/>
+                    <TextView
+                        style="@style/menu_kategori_text"
+                        android:text="catering"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/cat_line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/kategori_decoration"
+                style="@style/menu_kategori_card">
+                <LinearLayout
+                    style="@style/menu_kategori_linearlayout">
+                    <ImageView
+                        style="@style/menu_kategori_image"
+                        android:src="@drawable/kat_decoration"/>
+                    <TextView
+                        style="@style/menu_kategori_text"
+                        android:text="decoration"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/kategori_performance"
+                style="@style/menu_kategori_card">
+                <LinearLayout
+                    style="@style/menu_kategori_linearlayout">
+                    <ImageView
+                        style="@style/menu_kategori_image"
+                        android:src="@drawable/kat_entertainment"/>
+                    <TextView
+                        style="@style/menu_kategori_text"
+                        android:text="entertainment"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/kategori_documentation"
+                style="@style/menu_kategori_card">
+                <LinearLayout
+                    style="@style/menu_kategori_linearlayout">
+                    <ImageView
+                        style="@style/menu_kategori_image"
+                        android:src="@drawable/kat_documentation"/>
+                    <TextView
+                        style="@style/menu_kategori_text"
+                        android:text="documentation"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

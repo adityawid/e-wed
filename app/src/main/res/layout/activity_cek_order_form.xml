@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CekOrderFormActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            style="@style/title_bar"
+            android:text="Order"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacer_10">
+<!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/text_left"
+                    android:text="No Invoice"/>
+                <TextView
+                    style="@style/text_mid" />
+                <TextView
+                    android:id="@+id/check_invoice"
+                    style="@style/text_right"
+                    android:text="35467"/>
+            </LinearLayout>
+-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/text_left"
+                    android:text="Nama Produk"/>
+                <TextView
+                    style="@style/text_mid" />
+                <TextView
+                    android:id="@+id/check_Produk"
+                    style="@style/text_right"
+                    android:text="Baju Kebaya Coklat"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/text_left"
+                    android:text="Nama Vendor"/>
+                <TextView
+                    style="@style/text_mid" />
+                <TextView
+                    android:id="@+id/check_vendor"
+                    style="@style/text_right"
+                    android:text="WPR Boutique"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/text_left"
+                    android:text="Kategori"/>
+                <TextView
+                    style="@style/text_mid" />
+                <TextView
+                    android:id="@+id/check_kategori"
+                    style="@style/text_right"
+                    android:text="Wardrobe"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/text_left"
+                    android:text="Tanggal Acara"/>
+                <TextView
+                    style="@style/text_mid" />
+                <TextView
+                    android:id="@+id/check_tgl"
+                    style="@style/text_right"
+                    android:text="13 / 12 / 2018" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/text_left"
+                    android:text="Harga Deal"/>
+                <TextView
+                    style="@style/text_mid" />
+                <TextView
+                    android:id="@+id/check_harga"
+                    style="@style/text_right"
+                    android:text="400000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/text_left"
+                    android:text="Lokasi Tujuan"/>
+                <TextView
+                    style="@style/text_mid" />
+                <TextView
+                    android:id="@+id/check_lokasi"
+                    style="@style/text_right"
+                    android:text="Bulgari Resort Bali" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/text_left"
+                    android:text="Keterangan"/>
+                <TextView
+                    style="@style/text_mid" />
+                <TextView
+                    android:id="@+id/COF_check_ket"
+                    style="@style/text_right"
+                    android:text="main color ungu" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/title_bar"
+            android:layout_marginTop="@dimen/spacer_6"
+            android:text="Your Profile"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacer_10">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/text_left"
+                    android:text="Nama Lengkap"/>
+                <TextView
+                    style="@style/text_mid" />
+                <TextView
+                    android:id="@+id/check_namaLengkap"
+                    style="@style/text_right"
+                    android:text="Anis Adila"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/text_left"
+                    android:text="No Rekening"/>
+                <TextView
+                    style="@style/text_mid" />
+                <TextView
+                    android:id="@+id/check_rekening"
+                    style="@style/text_right"
+                    android:text="008.000.0019"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/text_left"
+                    android:text="No HP"/>
+                <TextView
+                    style="@style/text_mid" />
+                <TextView
+                    android:id="@+id/check_hp"
+                    style="@style/text_right"
+                    android:text="085765432123"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/text_left"
+                    android:text="Provinsi"/>
+                <TextView
+                    style="@style/text_mid" />
+                <TextView
+                    android:id="@+id/check_provinsi"
+                    style="@style/text_right"
+                    android:text="Jawa Tengah"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/text_left"
+                    android:text="Kota"/>
+                <TextView
+                    style="@style/text_mid" />
+                <TextView
+                    android:id="@+id/check_kota"
+                    style="@style/text_right"
+                    android:text="Semarang" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/text_left"
+                    android:text="Alamat"/>
+                <TextView
+                    style="@style/text_mid" />
+                <TextView
+                    android:id="@+id/check_alamat"
+                    style="@style/text_right"
+                    android:text="Jl. Karonsih Selatan, Ngaliyan" />
+            </LinearLayout>
+
+<!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/text_left"
+                    android:text="Lokasi Tujuan"/>
+                <TextView
+                    style="@style/text_mid" />
+                <TextView
+                    android:id="@+id/COF_check_lokasi"
+                    style="@style/text_right"
+                    android:text="Bulgari Resort Bali" />
+            </LinearLayout>
+-->
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/title_bar"
+            android:layout_marginTop="@dimen/spacer_6"
+            android:text="Payment"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacer_16"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_square"
+                android:padding="@dimen/spacer_10"
+                android:layout_gravity="center"
+                android:text="@string/transfer"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/spacer_10"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_error_outline_black_24dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:id="@+id/btn_ConfirmOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_square"
+            android:padding="@dimen/spacer_10"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ORDER"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

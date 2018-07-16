@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tabHome"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Chat" />
+
+    <item
+        android:id="@+id/tabCart"
+        android:icon="@drawable/ic_cart"
+        android:title="Pesanan" />
+
+    <item
+        android:id="@+id/tabChat"
+        android:icon="@drawable/ic_chat"
+        android:title="Waroeng" />
+    <item
+        android:id="@+id/tabAccount"
+        android:icon="@drawable/ic_user"
+        android:title="Stats" />
+
+</menu>

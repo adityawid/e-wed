@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Apps</string>
+    <string name="app_name">E-Wed</string>
+    <string name="app_tagline">All About Wedding</string>
+
+    <string name="transfer">Transfer ke rekening BRI 034012345678910 dan mohon sertakan No. Invoice</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
